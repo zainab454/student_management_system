@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Student Form -->
+        <div class="form-container">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input 
+                    type="text" 
+                    id="rollNo" 
+                    placeholder="Roll Number"
+                    required
+                >
+
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Email"
+                    required
+                >
+
+                <input 
+                    type="text" 
+                    id="department" 
+                    placeholder="Department"
+                    required
+                >
+
+                <button type="submit" id="submitButton">
+                    Add Student
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-container">
+
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search student..."
+            >
+
+        </div>
+
+        <!-- Student Table -->
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
